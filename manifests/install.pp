@@ -29,7 +29,7 @@ class foreman::install {
         $repo,
         Package['foreman'],
       ],
-      notify  => [Class['foreman::service'],Package['foreman']],
+      notify  => Class['foreman::service'],
     }
   }
 
